@@ -1,12 +1,21 @@
 package model;
 
 public class Candidato {
+	private int id;
 	private int numero;
 	private String nome;
 	private int votos;
-	
+
 	public Candidato() {
 		super();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public int getNumero() {
@@ -35,8 +44,6 @@ public class Candidato {
 
 	@Override
 	public String toString() {
-		return "Candidato [numero=" + numero + ", nome=" + nome + ", votos=" + votos + "]";
+		return "Número:" + numero + ", nome:" + nome + ", votos:" + votos;
 	}
-	
-	
 }
